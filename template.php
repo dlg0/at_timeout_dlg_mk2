@@ -4,10 +4,10 @@
 /**
  * Override or insert variables into the html template.
  */
-function at_timeout_preprocess_html(&$vars) {
+function at_timeout_dlg_mk2_preprocess_html(&$vars) {
   global $theme_key;
 
-  $theme_name = 'at_timeout';
+  $theme_name = 'at_timeout_dlg_mk2';
   $path_to_theme = drupal_get_path('theme', $theme_name);
 
   // Load the media queries styles
@@ -111,7 +111,7 @@ function at_timeout_preprocess_html(&$vars) {
 /**
  * Override or insert variables into the html template.
  */
-function at_timeout_process_html(&$vars) {
+function at_timeout_dlg_mk2_process_html(&$vars) {
   if (module_exists('color')) {
     _color_html_alter($vars);
   }
@@ -120,7 +120,7 @@ function at_timeout_process_html(&$vars) {
 /**
  * Override or insert variables into the page template.
  */
-function at_timeout_process_page(&$vars) {
+function at_timeout_dlg_mk2_process_page(&$vars) {
   if (module_exists('color')) {
     _color_page_alter($vars);
   }
@@ -129,7 +129,7 @@ function at_timeout_process_page(&$vars) {
 /**
  * Override or insert variables into the block template.
  */
-function at_timeout_preprocess_block(&$vars) {
+function at_timeout_dlg_mk2_preprocess_block(&$vars) {
   if ($vars['block']->module == 'superfish' || $vars['block']->module == 'nice_menu') {
     $vars['content_attributes_array']['class'][] = 'clearfix';
   }
@@ -144,7 +144,7 @@ function at_timeout_preprocess_block(&$vars) {
 /**
  * Theme feed icons.
  */
-function at_timeout_feed_icon($variables) {
+function at_timeout_dlg_mk2_feed_icon($variables) {
   $text = t('Subscribe to @feed-title', array('@feed-title' => $variables['title']));
   $path = path_to_theme() . '/feed-icon.png';
   if ($image = theme('image', array('path' => $path, 'alt' => $text))) {
@@ -155,7 +155,7 @@ function at_timeout_feed_icon($variables) {
 /**
  * Override or insert variables into the field template.
  */
-function at_timeout_preprocess_field(&$vars) {
+function at_timeout_dlg_mk2_preprocess_field(&$vars) {
   $element = $vars['element'];
   $vars['classes_array'][] = 'view-mode-'. $element['#view_mode'];
   $vars['image_caption_teaser'] = FALSE;

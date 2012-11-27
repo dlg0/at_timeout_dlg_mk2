@@ -18,7 +18,7 @@ if (module_exists('noggin')) {
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function at_timeout_form_system_theme_settings_alter(&$form, &$form_state)  {
+function at_timeout_dlg_mk2_form_system_theme_settings_alter(&$form, &$form_state)  {
 
   // Header layout
   $form['at']['header'] = array(

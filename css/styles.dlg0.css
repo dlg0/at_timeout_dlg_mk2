@@ -1,0 +1,8 @@
+.media-element {
+	margin: 22px 0;
+	box-shadow: 3px 3px 7px #777;	
+	border-style: solid;
+	border-color: #000000;
+	border: 2px;
+	padding: 6px;
+}

@@ -14,6 +14,7 @@
   stylesheets[all][] = css/styles.modules.css
   stylesheets[all][] = css/styles.custom.css
   stylesheets[all][] = color/colors.css
+  stylesheets[all][] = css/styles.dlg0.css
 
 ;----------// scripts
   scripts[] = js/eq.js

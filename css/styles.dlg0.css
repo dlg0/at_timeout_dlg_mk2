@@ -6,3 +6,10 @@
 	border: 2px;
 	padding: 6px;
 }
+div.field.field-name-body.field-type-text-with-summary.view-mode-full {
+	padding-left:20px;
+	padding-right:20px;
+}
+h1#site-name {
+	font-size:3.5em;
+}
